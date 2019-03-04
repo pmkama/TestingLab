@@ -15,23 +15,23 @@ public class SearchBasedTestCoverage extends CoverageTest {
 
     public SearchBasedTestCoverage(){
 
-        this.initialTestData = this.initTriangleSides(new StringBuilder(), new float[3]);
+        this.initialTestData = this.randomlyInitializeTestData(new StringBuilder(), new float[3]);
         this.side1 = initialTestData[0];
         this.side2 = initialTestData[1];
         this.side3 = initialTestData[2];
     }
 
+
     @Override
     protected void generateTestData(StringBuilder builder, float[] testData) {
 
-        //TODO : test data generation based on SBSE
-    }
+        //TODO : test data generation based on SBST
+        //Initialize test data
+        new SearchBasedTestCoverage();
 
 
 
-    @Override
-    protected double computeBranchCoverage(List<String> outputs, String testData) {
-        return 0;
+
     }
 
     /**
@@ -39,16 +39,7 @@ public class SearchBasedTestCoverage extends CoverageTest {
      * @param builder
      * @param initialTestData
      */
-    public float[] initTriangleSides(StringBuilder builder, float [] initialTestData){
-        return this.randomData(builder, initialTestData);
-    }
-
-    /**
-     * Generate randomly the three first sides of the triangle
-     * @param builder
-     * @param initialTestData
-     */
-    private float[] randomData(StringBuilder builder, float[] initialTestData) {
+    public float[] randomlyInitializeTestData(StringBuilder builder, float [] initialTestData){
         final int MAX_NUMBER_OF_DATA = 3;
         final int MIN_VALUE = -10;
         final int MAX_VALUE = 20;
@@ -58,6 +49,20 @@ public class SearchBasedTestCoverage extends CoverageTest {
             builder.append(initialTestData[i]).append(", ");
         }
         return initialTestData;
+    }
+
+
+    public StringBuilder readjustTestData(StringBuilder builder){
+        StringBuilder newBuilder = new StringBuilder();
+
+        // TODO: reorganize test data
+
+        return newBuilder;
+    }
+
+    @Override
+    protected double computeBranchCoverage(List<String> outputs, String testData) {
+        return 0;
     }
 
 
