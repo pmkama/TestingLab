@@ -11,9 +11,23 @@ public class ControlFlowGraph {
 
     public void initilizeCFG(){
         //TODO : create Conditions
-
+    	
+    	Condition cond1 = new Condition();
+    	cond1.setOperande_1 = sides;
+    	cond1.setOperator = Operator.DIFFERENT;
+    	cond1.setOperande_2 = "3";
+    	
+    	
         //TODO : create Nodes
+    	
+    	Node node1 = new Node();
+    	node1.setConditions(cond1);
+    	
         //TODO : create Paths
+    	
+    	Path path1 = new Path();
+    	path1.setNodes(node1);
+    	path1.setPathID(1);
     }
 
 
