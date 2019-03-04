@@ -7,18 +7,12 @@ import java.util.Random;
 
 public class SearchBasedTestCoverage extends CoverageTest {
 
-    float [] initialTestData;
-    private double side1;
-    private double side2;
-    private double side3;
+    
 
 
     public SearchBasedTestCoverage(){
 
-        this.initialTestData = this.randomlyInitializeTestData(new StringBuilder(), new float[3]);
-        this.side1 = initialTestData[0];
-        this.side2 = initialTestData[1];
-        this.side3 = initialTestData[2];
+       
     }
 
 
@@ -39,17 +33,7 @@ public class SearchBasedTestCoverage extends CoverageTest {
      * @param builder
      * @param initialTestData
      */
-    public float[] randomlyInitializeTestData(StringBuilder builder, float [] initialTestData){
-        final int MAX_NUMBER_OF_DATA = 3;
-        final int MIN_VALUE = -10;
-        final int MAX_VALUE = 20;
-        Random random = new Random();
-        for (int i = 0; i < MAX_NUMBER_OF_DATA; i++) {
-            initialTestData[i] = MIN_VALUE + random.nextInt(MAX_VALUE - MIN_VALUE);
-            builder.append(initialTestData[i]).append(", ");
-        }
-        return initialTestData;
-    }
+
 
 
     public StringBuilder readjustTestData(StringBuilder builder){
