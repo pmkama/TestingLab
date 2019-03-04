@@ -1,5 +1,5 @@
 package triangle;
-public class triangle {
+public class Triangle {
 
     static final int ILLEGAL_ARGUMENTS = -2;
 

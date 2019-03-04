@@ -1,27 +1,17 @@
 package tp6305;
 
-import triangle.InstrumentedTriangle;
-
 import java.util.*;
 
 public abstract class CoverageTest {
 
 	public static final int TOTAL_BRANCH_NUM = 19;
-	public static final int TOTAL_AC_BRANCH_NUM = 33 + 19;
-	protected static final int SEED = 100;
 	protected Set<String> branchesTested = new HashSet<String>();
-	protected Set<String> activeClausesTested = new HashSet<String>();
 	protected int iterationNum;
 	private double branchCoverage;
-	private double racc;
 	private InstrumentedTriangle instrumentedTriangle = new InstrumentedTriangle();
 
 	public double getBranchCoverage() {
 		return branchCoverage;
-	}
-
-	public double getRACC() {
-		return racc;
 	}
 
 	public int getIterationNum() {
@@ -52,26 +42,6 @@ public abstract class CoverageTest {
 
 		this.iterationNum = 0;
 
-	}
-
-	public void testRACC(double coverage) {
-
-		this.reset();
-
-		fourInputsTestForRACC();
-
-		StringBuilder builder = new StringBuilder();
-
-		while (true) {
-			runTest(builder);
-			this.racc = this.computeRACC(instrumentedTriangle.getOutputs(),
-					builder.toString());
-
-			if (this.racc >= coverage) {
-				outputCoveredCode(this.activeClausesTested);
-				break;
-			}
-		}
 	}
 
 	private void outputCoveredCode(Set<String> coveredCode) {
@@ -112,21 +82,6 @@ public abstract class CoverageTest {
 		iterationNum++;
 	}
 
-	private void fourInputsTestForRACC() {
-
-		float[] illegalTestData = new float[] { 0, 0, 0, 0 };
-
-		this.activeClausesTested.clear();
-
-		instrumentedTriangle.getType(illegalTestData);
-
-		this.computeRACC(instrumentedTriangle.getOutputs(), "0, 0, 0, 0");
-		iterationNum++;
-	}
-
 	protected abstract double computeBranchCoverage(List<String> outputs,
 			String testData);
-
-	protected abstract double computeRACC(List<String> outputs, String testData);
-
 }
