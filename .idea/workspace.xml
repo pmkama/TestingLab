@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f55aaba9-64a3-40d1-8392-4ae80cea1dab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp6305/CoverageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/CoverageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/triangle/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="58" column="67" lean-forward="true" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+            <state relative-caret-position="522">
+              <caret line="65" column="51" lean-forward="true" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -41,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="170">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,24 +56,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/CoverageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+            <state relative-caret-position="198">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
-                <element signature="method#fourInputsTestForBranchCoverage#0;class#CoverageTest#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="32" column="63" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="63" />
+            <state relative-caret-position="310">
+              <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2003#2004#0" expanded="true" />
-                <element signature="e#2027#2028#0" expanded="true" />
+                <element signature="docComment;method#randomlyInitializeTestData#0;class#SearchBasedTestCoverage#0" />
+                <element signature="method#randomlyInitializeTestData#0;class#SearchBasedTestCoverage#0" />
+                <element signature="method#recombine#0;class#SearchBasedTestCoverage#0" />
+                <element signature="e#3616#3617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,41 +84,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="378">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#949#950#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Path.java">
+        <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="450">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
                 <element signature="e#402#403#0" expanded="true" />
                 <element signature="e#435#436#0" expanded="true" />
@@ -162,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Operators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="90">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -197,15 +190,15 @@
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Operators.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/RandomCoverageTest.java" />
         <option value="$PROJECT_DIR$/src/triangle/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/tp6305/CoverageTest.java" />
-        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTest.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java" />
-        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" />
-        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Path.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Node.java" />
+        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" />
+        <option value="$PROJECT_DIR$/src/tp6305/CoverageTest.java" />
+        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java" />
+        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" />
       </list>
     </option>
   </component>
@@ -216,10 +209,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1909" />
-    <option name="y" value="58" />
+    <option name="x" value="-11" />
     <option name="width" value="1940" />
-    <option name="height" value="1040" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -364,7 +356,7 @@
       <workItem from="1551384380912" duration="8077000" />
       <workItem from="1551717573292" duration="23000" />
       <workItem from="1551717938660" duration="69000" />
-      <workItem from="1551718531011" duration="6947000" />
+      <workItem from="1551718531011" duration="16647000" />
     </task>
     <task id="LOCAL-00001" summary="code completed in the RandomCoverageTest class">
       <created>1548398140104</created>
@@ -380,11 +372,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551726953151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="code completed in the RandomCoverageTest class">
+      <created>1551727142042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551727142042</updated>
+    </task>
+    <task id="LOCAL-00004" summary="project strcuture">
+      <created>1551731239539</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551731239539</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58173000" />
+    <option name="totallyTimeSpent" value="67873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,9 +402,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="0" width="1293" height="687" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.28825912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.2887267" />
       <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" weight="0.25506073" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -457,7 +464,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="code completed in the RandomCoverageTest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="code completed in the RandomCoverageTest class" />
+    <MESSAGE value="project strcuture" />
+    <option name="LAST_COMMIT_MESSAGE" value="project strcuture" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -466,16 +474,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tp6305/CoverageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
-          <folding>
-            <element signature="method#fourInputsTestForBranchCoverage#0;class#CoverageTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/RandomCoverageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -484,23 +482,6 @@
             <element signature="e#254#255#0" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/triangle/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="58" column="67" lean-forward="true" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -535,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -557,10 +531,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java">
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/CoverageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/triangle/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="65" column="51" lean-forward="true" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding>
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#435#436#0" expanded="true" />
@@ -578,34 +613,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Operators.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="175">
+          <caret line="822" column="16" selection-start-line="822" selection-start-column="16" selection-end-line="822" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="63" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="63" />
+        <state relative-caret-position="310">
+          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2003#2004#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="docComment;method#randomlyInitializeTestData#0;class#SearchBasedTestCoverage#0" />
+            <element signature="method#randomlyInitializeTestData#0;class#SearchBasedTestCoverage#0" />
+            <element signature="method#recombine#0;class#SearchBasedTestCoverage#0" />
+            <element signature="e#3616#3617#0" expanded="true" />
           </folding>
         </state>
       </provider>

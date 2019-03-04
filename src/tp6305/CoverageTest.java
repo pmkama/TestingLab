@@ -9,8 +9,8 @@ public abstract class CoverageTest {
 	public static final int TOTAL_BRANCH_NUM = 19;
 	protected Set<String> branchesTested = new HashSet<String>();
 	protected int iterationNum;
-	private double branchCoverage;
-	private Triangle testedTriangle;
+	public double branchCoverage;
+	public Triangle testedTriangle = new Triangle();
 
 
 	public double getBranchCoverage() {

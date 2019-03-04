@@ -2,13 +2,13 @@ package tp6305.papemamakamara_aminatandiaye.tp2;
 
 public class FitnessFunction {
 
-    private static float fitnessValue;
+    private float fitnessValue;
     private ControlFlowGraph cfg = new ControlFlowGraph();
 
-    static float computeFitness(Condition condition){
+    public float computeFitness(Condition condition){
         switch (condition.getOperator()){
             case OR:
-                fitnessValue = ;
+                //fitnessValue = ;
                 break;
             case AND:
                 break;
@@ -20,11 +20,11 @@ public class FitnessFunction {
                 break;
             case EGALE:
                 break;
-
         }
+        return 0;
     }
 
-    public static float getFitnessValue() {
+    public float getFitnessValue() {
         return fitnessValue;
     }
 
