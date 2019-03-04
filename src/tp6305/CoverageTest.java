@@ -1,5 +1,7 @@
 package tp6305;
 
+import triangle.Triangle;
+
 import java.util.*;
 
 public abstract class CoverageTest {
@@ -8,7 +10,8 @@ public abstract class CoverageTest {
 	protected Set<String> branchesTested = new HashSet<String>();
 	protected int iterationNum;
 	private double branchCoverage;
-	private InstrumentedTriangle instrumentedTriangle = new InstrumentedTriangle();
+	private Triangle testedTriangle;
+
 
 	public double getBranchCoverage() {
 		return branchCoverage;
@@ -21,15 +24,12 @@ public abstract class CoverageTest {
 	public void testBranchCoverage(double coverageThreshold) {
 
 		this.reset();
-
-		fourInputsTestForBranchCoverage();
-
 		StringBuilder builder = new StringBuilder();
 
 		while (true) {
 			runTest(builder);
-			branchCoverage = this.computeBranchCoverage(
-					instrumentedTriangle.getOutputs(), builder.toString());
+			//branchCoverage = this.computeBranchCoverage(
+					//instrumentedTriangle.getOutputs(), builder.toString());
 
 			if (branchCoverage >= coverageThreshold) {
 				outputCoveredCode(this.branchesTested);
@@ -63,24 +63,12 @@ public abstract class CoverageTest {
 
 		generateTestData(builder, testData);
 
-		instrumentedTriangle.getType(testData);
+		testedTriangle.getType(testData);
 	}
 
 	protected abstract void generateTestData(StringBuilder builder,
 			float[] testData);
 
-	private void fourInputsTestForBranchCoverage() {
-
-		float[] illegalTestData = new float[] { 0, 0, 0, 0 };
-
-		branchesTested.clear();
-
-		instrumentedTriangle.getType(illegalTestData);
-
-		this.computeBranchCoverage(instrumentedTriangle.getOutputs(),
-				"0, 0, 0, 0");
-		iterationNum++;
-	}
 
 	protected abstract double computeBranchCoverage(List<String> outputs,
 			String testData);
