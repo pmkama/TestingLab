@@ -35,4 +35,9 @@ public class ControlFlowGraph {
     public void setPaths(List<Path> paths) {
         this.paths = paths;
     }
+
+    public float[] randomlyInitializeTestData(StringBuilder stringBuilder, float[] testData) {
+
+            return testData;
+    }
 }

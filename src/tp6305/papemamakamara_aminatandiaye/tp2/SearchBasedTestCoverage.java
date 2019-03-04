@@ -11,6 +11,7 @@ public class SearchBasedTestCoverage extends CoverageTest {
 
     public static int SIDE_MAX_NUMBER = 3;
     public static int K_value  = 1;
+
     float[] initialTestData;
     ControlFlowGraph cfg;
 
@@ -23,7 +24,6 @@ public class SearchBasedTestCoverage extends CoverageTest {
 
     @Override
     protected void generateTestData(StringBuilder builder, float[] testData) {
-
         //TODO : test data generation based on SBST
         //Initialize test data
         new SearchBasedTestCoverage();
@@ -33,15 +33,11 @@ public class SearchBasedTestCoverage extends CoverageTest {
                         List<Condition> conditions = node.getConditions();
                         if (conditions.size() == 1) {
                             Condition condition = conditions.get(0);
-                            float fitnessValue = evaluateFitnessValue(condition.getOperande_1(),
-                                    condition.getOperande_2(),
-                                    condition.getOperator());
+                            float fitnessValue = evaluateFitnessValue(condition);
                         } else {
                             conditions.stream().forEach(condition -> {
                                 List<Float> fitnessValues = new ArrayList<>();
-                                fitnessValues.add(evaluateFitnessValue(condition.getOperande_1(),
-                                        condition.getOperande_2(),
-                                        condition.getOperator()));
+                                fitnessValues.add(evaluateFitnessValue(condition));
                                 Optional<Float> fitnessValue = fitnessValues.stream()
                                         .min((a,b) -> (int) (a-b));
                             });
@@ -50,26 +46,8 @@ public class SearchBasedTestCoverage extends CoverageTest {
                 });
     }
 
-    private float evaluateFitnessValue(float operande_1, float operande_2, Operators operator) {
-
-        float fitness = 0;
-
-        switch (operator){
-            case EGALE:
-                fitness = Math.abs(operande_1 - operande_2);
-                return fitness;
-            case DIFFERENT:
-                fitness = K_value;
-                return fitness;
-            case SUPERIEUR:
-                fitness = (operande_2 - operande_1) + K_value;
-            case INFERIEUR:
-                fitness = (operande_1 - operande_2) + K_value;
-                return fitness;
-            default:
-                break;
-        }
-        return fitness;
+    private float evaluateFitnessValue(Condition condition) {
+        return FitnessFunction.computeFitness(condition);
     }
 
     /**
