@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f55aaba9-64a3-40d1-8392-4ae80cea1dab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageTestMain.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/CoverageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/CoverageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/RandomCoverageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/triangle/InstrumentedTriangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/triangle/triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/triangle/triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instruments.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log6305-tasks.eml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log6305-tasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/log6305-tasks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/CoverageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/CoverageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" afterDir="false" />
-    </list>
+    <list default="true" id="f55aaba9-64a3-40d1-8392-4ae80cea1dab" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/tp6305/CoverageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="317">
-              <caret line="68" column="30" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="30" />
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#202#210#0" expanded="true" />
@@ -408,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551746124380</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first version">
+      <created>1551753276025</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551753276025</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77426000" />
+    <option name="totallyTimeSpent" value="77478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,7 +415,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1293" height="687" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.2887267" />
       <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" weight="0.25506073" />
@@ -434,7 +423,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16756757" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16756757" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6990991" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -522,7 +511,8 @@
     <MESSAGE value="code completed in the RandomCoverageTest class" />
     <MESSAGE value="project strcuture" />
     <MESSAGE value="project strcuture (in progress)" />
-    <option name="LAST_COMMIT_MESSAGE" value="project strcuture (in progress)" />
+    <MESSAGE value="first version" />
+    <option name="LAST_COMMIT_MESSAGE" value="first version" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -658,7 +648,7 @@
     <entry file="file://$PROJECT_DIR$/src/tp6305/CoverageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
-          <caret line="68" column="30" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="30" />
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#202#210#0" expanded="true" />
