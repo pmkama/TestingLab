@@ -2,32 +2,28 @@ package tp6305.papemamakamara_aminatandiaye.tp2;
 
 public class FitnessFunction {
 
-    private float fitnessValue;
+    private static float fitnessValue = 0;
     private ControlFlowGraph cfg = new ControlFlowGraph();
 
     public static float computeFitness(Condition condition) {
 
-        float fitness = 0;
         int K_value = 1;
         switch (condition.getOperator()) {
             case EGALE:
-                fitness = Math.abs(condition.getOperande_1() - condition.getOperande_2());
-                return fitness;
+                fitnessValue = Math.abs(condition.getOperande_1() - condition.getOperande_2());
+                return fitnessValue;
             case DIFFERENT:
-                fitness = K_value;
-                return fitness;
+                fitnessValue = K_value;
+                return fitnessValue;
             case SUPERIEUR:
-                fitness = (condition.getOperande_2() - condition.getOperande_1()) + K_value;
+                fitnessValue = (condition.getOperande_2() - condition.getOperande_1()) + K_value;
+                return fitnessValue;
             case INFERIEUR:
-                fitness = (condition.getOperande_1() - condition.getOperande_2()) + K_value;
-                return fitness;
+                fitnessValue = (condition.getOperande_1() - condition.getOperande_2()) + K_value;
+                return fitnessValue;
             default:
                 break;
         }
-        return fitness;
-    }
-
-    public float getFitnessValue() {
         return fitnessValue;
     }
 

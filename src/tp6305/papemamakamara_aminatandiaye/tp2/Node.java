@@ -4,13 +4,6 @@ import java.util.List;
 
 public class Node {
     private List<Condition> conditions;
-    
-    //If logicOperator==false, Operator==&&
-    private Boolean logicOperator = false;
-    
-    public void setLogicOperator(Boolean logicOperator) {
-    	this.logicOperator = logicOperator;
-    }
 
     public Node(List<Condition> conditions) {
         this.conditions = conditions;

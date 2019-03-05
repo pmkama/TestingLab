@@ -27,6 +27,8 @@ public class SearchBasedTestCoverage extends CoverageTest {
         //TODO : test data generation based on SBST
         //Initialize test data
         new SearchBasedTestCoverage();
+
+        System.out.println("Outpuuuuuttt !!!!!!");
         this.cfg.getPaths().stream()
                 .forEach(path -> {
                     path.getNodes().stream().forEach(node -> {

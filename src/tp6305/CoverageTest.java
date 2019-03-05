@@ -6,7 +6,7 @@ import java.util.*;
 
 public abstract class CoverageTest {
 
-	public static final int TOTAL_BRANCH_NUM = 19;
+	//public static final int TOTAL_BRANCH_NUM = 19;
 	protected Set<String> branchesTested = new HashSet<String>();
 	protected int iterationNum;
 	public double branchCoverage;
@@ -31,8 +31,11 @@ public abstract class CoverageTest {
 			//branchCoverage = this.computeBranchCoverage(
 					//instrumentedTriangle.getOutputs(), builder.toString());
 
+
+
 			if (branchCoverage >= coverageThreshold) {
-				outputCoveredCode(this.branchesTested);
+				//TODO : condition d'arrêt de la boucle While
+				// en rapport avec le fitness maybe ?
 				break;
 			}
 		}

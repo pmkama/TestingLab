@@ -14,7 +14,7 @@ public class CoverageTestMain {
         CoverageTest coverageTest = new SearchBasedTestCoverage();
 
 
-        //testBranchCoverage(coverageTest, 1.0);
+        testBranchCoverage(coverageTest, 1.0);
 
         //testBranchCoverage(coverageTest, 0.95);
 
