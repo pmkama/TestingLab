@@ -1,7 +1,5 @@
 package tp6305.papemamakamara_aminatandiaye.tp2;
 
-import tp6305.CoverageTest;
-
 import java.util.List;
 
 public class SearchBasedTestCoverage extends CoverageTest {
@@ -22,6 +20,7 @@ public class SearchBasedTestCoverage extends CoverageTest {
         this.cfg.getPaths().stream()
                 .forEach(path -> {
                     path.getNodes().stream().forEach(node -> {
+                    	//System.out.println("Path ID : " +path.getPathID());
                         List<Condition> conditions = node.getConditions();
                         evaluateFitnessValue(conditions);
                         //fitnessMap.put(path.getPathID(), fitnessValue);

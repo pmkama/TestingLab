@@ -9,25 +9,26 @@ public class FitnessFunction {
     public static final int K_VALUE = 1;
     private static final int UNIQUE_CONDITION = 0;
     private static int fitnessValue;
+    private static int count = 0;
 
     public FitnessFunction() {}
 
 
     public static int getFitness(List<Condition> conditions) {
 
-        int fitness;
-        int count = 0;
+        int fitness;     
 
         if (conditions.size() == 1) {
             fitness = computeUniqueFitness(conditions.get(UNIQUE_CONDITION));
         } else {
             fitness = getMinFitnessValue(conditions);
+            //System.out.println("Plusieurs conditions !! ");
         }
 
         if (fitness == 0) {
-            return fitness;
-        } else {
-            count++;
+        	return fitness;
+        }else {
+        	count++;       
             fitness = getFitness(readjustTestData(conditions, fitness));
             System.out.println("Condition " + conditions + " Fitness : " + fitness + " -   Iteration : " + count);
         }
@@ -40,8 +41,11 @@ public class FitnessFunction {
 
     public static int computeUniqueFitness(Condition condition) {
 
-        int op1 = condition.getOperande_1();
-        int op2 = condition.getOperande_2();
+    	int op1,op2;
+   		op1 = condition.getOperande_1();
+   		op2 = condition.getOperande_2();
+
+    	
 
         switch (condition.getOperator()) {
             case EGALE:
@@ -112,6 +116,17 @@ public class FitnessFunction {
         newCondition.setOperande_1(condition.getOperande_1() + fitness);
 
         return newCondition;
+    }
+    
+    private static List<Integer> readjustOperandes(Condition condition) {
+        int op1,op2;
+        op1 = condition.getOperande_1();
+        op2 = condition.getOperande_2();
+        List<Integer> operandes = new ArrayList<>();
+        operandes.add(op1);
+        operandes.add(op2);
+
+        return operandes;
     }
 }
 
