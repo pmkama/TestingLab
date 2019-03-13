@@ -3,6 +3,7 @@ package tp6305.papemamakamara_aminatandiaye.tp2;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 /**
  * class that represent our CFG
@@ -13,23 +14,26 @@ public class ControlFlowGraph {
     public Path path1,path2, path3, path4, path5, path6, path7, path8, path9, path10;
     public List<Node> node1, node2, node3, node4, node5, node6, node7, node8, node9, node10;
     public List<Condition> cond1, cond2, cond3_1, cond3_2, cond3_3, cond4, cond5, cond6, cond7;
-    float [] initialTestData;
-    private float side1;
-    private float side2;
-    private float side3;
+    final int MAX_SIDES_NUMBER= 3;
+    int [] initialTestData;
+    private int side1;
+    private int side2;
+    private int side3;
 
 
     public ControlFlowGraph() {
-        initialTestData = this.randomlyInitializeTestData(new StringBuilder(), new float[3]);
-        side1 = initialTestData[0];
-        side2 = initialTestData[1];
-        side3 = initialTestData[2];
-
         this.paths = new ArrayList<>();
+        this.initialTestData = this.randomlyInitializeTestData(new StringBuilder(), new int[MAX_SIDES_NUMBER] );
+        this.initilizeCFG();
     }
 
     public void initilizeCFG() {
 
+        side1 = initialTestData[0];
+        side2 = initialTestData[1];
+        side3 = initialTestData[2];
+
+        System.out.println("Data : " + side1 + " : " +  side2 + " : " + side3);
         //Path1 : 33->34->76
         cond1= new ArrayList<>();
         node1 = new ArrayList<>();
@@ -37,7 +41,7 @@ public class ControlFlowGraph {
         node1.add(new Node(cond1));
         path1 = new Path(1, node1);
 
-        //Path2 : 33, 36, 37, 76
+        //Path2 : 33, 36, 76
         //Conditions
         cond2 = new ArrayList<>();
         Condition cond2_1 = new Condition(side1,0,  Operators.INFERIEUR);
@@ -48,7 +52,7 @@ public class ControlFlowGraph {
         node2.add(new Node(cond2));
         path2 = new Path(2, node2);
 
-        //Path3 : 33, 36, 39, 40, 41, 43, 44, 46, 47, 49, 56, 57, 76
+        //Path3 : 33, 36, 39, 40, 43, 46, 49, 56, 76
         //Conditions
         cond3_1 = new ArrayList<>();
         cond3_2 = new ArrayList<>();
@@ -104,6 +108,26 @@ public class ControlFlowGraph {
         path10 = new Path(9, node10);
 
         Collections.addAll(paths, path1, path2, path3, path4, path5, path6, path7, path8, path9, path10);
+
+    }
+
+
+    /**
+     * Initialize the triangle's sides
+     *
+     * @param builder
+     * @param initialTestData
+     */
+    public int[] randomlyInitializeTestData(StringBuilder builder, int[] initialTestData) {
+
+        final int MIN_VALUE = -10;
+        final int MAX_VALUE = 20;
+        Random random = new Random();
+        for (int i = 0; i < initialTestData.length; i++) {
+            initialTestData[i] = MIN_VALUE + random.nextInt(MAX_VALUE - MIN_VALUE);
+            builder.append(initialTestData[i]).append(", ");
+        }
+        return initialTestData;
     }
 
     public List<Path> getPaths() {
@@ -112,10 +136,5 @@ public class ControlFlowGraph {
 
     public void setPaths(List<Path> paths) {
         this.paths = paths;
-    }
-
-    public float[] randomlyInitializeTestData(StringBuilder stringBuilder, float[] testData) {
-
-        return testData;
     }
 }

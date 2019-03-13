@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Node {
     private List<Condition> conditions;
+    private boolean isVisited = false;
 
     public Node(List<Condition> conditions) {
         this.conditions = conditions;
@@ -17,4 +18,11 @@ public class Node {
         this.conditions = conditions;
     }
 
+    public boolean isVisited() {
+        return isVisited;
+    }
+
+    public void setVisited(boolean visited) {
+        isVisited = visited;
+    }
 }
