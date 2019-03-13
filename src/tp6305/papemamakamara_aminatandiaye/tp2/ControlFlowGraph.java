@@ -33,7 +33,7 @@ public class ControlFlowGraph {
         side2 = initialTestData[1];
         side3 = initialTestData[2];
 
-        System.out.println("Data : " + side1 + " : " +  side2 + " : " + side3);
+        //System.out.println("Data : " + side1 + " : " +  side2 + " : " + side3);
         //Path1 : 33->34->76
         cond1= new ArrayList<>();
         node1 = new ArrayList<>();
@@ -121,7 +121,7 @@ public class ControlFlowGraph {
     public int[] randomlyInitializeTestData(StringBuilder builder, int[] initialTestData) {
 
         final int MIN_VALUE = -10;
-        final int MAX_VALUE = 20;
+        final int MAX_VALUE = 10;
         Random random = new Random();
         for (int i = 0; i < initialTestData.length; i++) {
             initialTestData[i] = MIN_VALUE + random.nextInt(MAX_VALUE - MIN_VALUE);

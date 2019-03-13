@@ -8,52 +8,10 @@ public class FitnessFunction {
 
     public static final int K_VALUE = 1;
     private static final int UNIQUE_CONDITION = 0;
-    private static final int DATA_SET_LENGTH = 3;
-    private static int fitnessValue = 0;
-    private static ControlFlowGraph cfg;
-    private float[] testData;
+    private static int fitnessValue;
 
-    public FitnessFunction() {
-        testData = new float[DATA_SET_LENGTH];
-        cfg = new ControlFlowGraph();
-    }
+    public FitnessFunction() {}
 
-
-    /*public static Map<Integer, Integer> fitnessEvaluationResult() {
-
-        List<Path> paths = FitnessFunction.cfg.getPaths();
-        Map<Integer, Integer> results = new HashMap<>();
-
-        for (Path path : paths) {
-
-            int nbNodeVisited = 0;
-
-            for (Node node : path.getNodes()) {
-
-                List<Condition> conditions = node.getConditions();
-
-                if (getFitness(conditions) == 0) { // condition is True
-                    break;
-                } else {
-                    readjustTestData(conditions);
-                    getFitness(conditions);
-                }
-
-                node.setVisited(true);
-
-            }
-
-            //When we are done evaluating fitness for all nodes of a given path
-            //We count the number of visited nodes
-            for (Node node : path.getNodes()) {
-                if (node.isVisited())
-                    nbNodeVisited++;
-            }
-            results.put(path.getPathID(), nbNodeVisited);
-        }
-
-        return results;
-    }*/
 
     public static int getFitness(List<Condition> conditions) {
 
@@ -70,12 +28,12 @@ public class FitnessFunction {
             return fitness;
         } else {
             count++;
-            readjustTestData(conditions, fitness);
-            fitness = getFitness(conditions);
+            fitness = getFitness(readjustTestData(conditions, fitness));
             System.out.println("Condition " + conditions + " Fitness : " + fitness + " -   Iteration : " + count);
         }
 
         System.out.println("Final Iteration : " + count);
+
         return fitness;
     }
 
@@ -84,7 +42,6 @@ public class FitnessFunction {
 
         int op1 = condition.getOperande_1();
         int op2 = condition.getOperande_2();
-        int K_value = 1;
 
         switch (condition.getOperator()) {
             case EGALE:
@@ -94,17 +51,17 @@ public class FitnessFunction {
 
             case DIFFERENT:
                 if (op1 != op2) fitnessValue = 0;
-                else fitnessValue = K_value;
+                else fitnessValue = K_VALUE;
                 return fitnessValue;
 
             case SUPERIEUR:
                 if (op1 > op2) fitnessValue = 0;
-                else fitnessValue = (condition.getOperande_2() - condition.getOperande_1()) + K_value;
+                else fitnessValue = (condition.getOperande_2() - condition.getOperande_1()) + K_VALUE;
                 return fitnessValue;
 
             case INFERIEUR:
                 if (op1 < op2) fitnessValue = 0;
-                else fitnessValue = (condition.getOperande_1() - condition.getOperande_2()) + K_value;
+                else fitnessValue = (condition.getOperande_1() - condition.getOperande_2()) + K_VALUE;
                 return fitnessValue;
 
             default:
@@ -151,9 +108,10 @@ public class FitnessFunction {
 
     private static Condition readjustUniqueCondition(Condition condition, int fitness) {
 
-        condition.setOperande_1(condition.getOperande_1() + fitness);
+        Condition newCondition = condition;
+        newCondition.setOperande_1(condition.getOperande_1() + fitness);
 
-        return condition;
+        return newCondition;
     }
 }
 
