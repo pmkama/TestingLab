@@ -22,7 +22,6 @@ public class FitnessFunction {
             fitness = computeUniqueFitness(conditions.get(UNIQUE_CONDITION));
         } else {
             fitness = getMinFitnessValue(conditions);
-            //System.out.println("Plusieurs conditions !! ");
         }
 
         if (fitness == 0) {
@@ -30,10 +29,9 @@ public class FitnessFunction {
         }else {
         	count++;       
             fitness = getFitness(readjustTestData(conditions, fitness));
-            System.out.println("Condition " + conditions + " Fitness : " + fitness + " -   Iteration : " + count);
         }
 
-        System.out.println("Final Iteration : " + count);
+        System.out.println("Iteration #" + count);
 
         return fitness;
     }
@@ -44,8 +42,6 @@ public class FitnessFunction {
     	int op1,op2;
    		op1 = condition.getOperande_1();
    		op2 = condition.getOperande_2();
-
-    	
 
         switch (condition.getOperator()) {
             case EGALE:
@@ -92,9 +88,7 @@ public class FitnessFunction {
         if (conditions.size() == 1) {
             newData.add(readjustUniqueCondition(conditions.get(UNIQUE_CONDITION), fitness));
         } else {
-
             newData = readjustMultipleConditions(conditions, fitness);
-
         }
         return newData;
     }

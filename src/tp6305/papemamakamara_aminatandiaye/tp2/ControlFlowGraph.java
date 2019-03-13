@@ -33,7 +33,7 @@ public class ControlFlowGraph {
         side2 = initialTestData[1];
         side3 = initialTestData[2];
 
-        //System.out.println("Data : " + side1 + " : " +  side2 + " : " + side3);
+        System.out.println("Initial Data : " + side1 + " : " +  side2 + " : " + side3);
         //Path1 : 33->34->76
         cond1= new ArrayList<>();
         node1 = new ArrayList<>();

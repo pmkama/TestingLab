@@ -29,12 +29,7 @@ public abstract class CoverageTest {
 
 		while (true) {
 			runTest(builder);
-			//branchCoverage = this.computeBranchCoverage(
-					//instrumentedTriangle.getOutputs(), builder.toString());
-
-
-
-			if (fitnessValue == 0 ) {
+			if (fitnessValue == 0) {
 				break;
 			}
 		}
