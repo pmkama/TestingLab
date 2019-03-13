@@ -11,6 +11,7 @@ public abstract class CoverageTest {
 	protected int iterationNum;
 	public double branchCoverage;
 	public Triangle testedTriangle = new Triangle();
+	public float fitnessValue;
 
 
 	public double getBranchCoverage() {
@@ -33,9 +34,7 @@ public abstract class CoverageTest {
 
 
 
-			if (branchCoverage >= coverageThreshold) {
-				//TODO : condition d'arrêt de la boucle While
-				// en rapport avec le fitness maybe ?
+			if (fitnessValue == 0 ) {
 				break;
 			}
 		}

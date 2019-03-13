@@ -18,14 +18,21 @@ public class SearchBasedTestCoverage extends CoverageTest {
 
         new SearchBasedTestCoverage();
 
-        this.cfg.getPaths().stream()
-                .forEach(path -> {
+        for (Path path : this.cfg.getPaths()){
+            System.out.println("Path #"+path.getPathID());
+            for (Node node : path.getNodes()){
+                List<Condition> conditions = node.getConditions();
+                fitnessValue = evaluateFitnessValue(conditions);
+            }
+        }
 
+        /*this.cfg.getPaths().stream()
+                .forEach(path -> {
                     path.getNodes().stream().forEach(node -> {
                         List<Condition> conditions = node.getConditions();
-                        float fitnessValue = evaluateFitnessValue(conditions);
+                        evaluateFitnessValue(conditions);
                     });
-                });
+                });*/
     }
 
     private float evaluateFitnessValue(List<Condition> conditions) {
