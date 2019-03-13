@@ -17,14 +17,13 @@ public class SearchBasedTestCoverage extends CoverageTest {
     protected void generateTestData(StringBuilder builder, float[] testData) {
 
         new SearchBasedTestCoverage();
-       // Map<Integer, Float> fitnessMap = new HashMap<>();
 
         this.cfg.getPaths().stream()
                 .forEach(path -> {
+
                     path.getNodes().stream().forEach(node -> {
                         List<Condition> conditions = node.getConditions();
-                        evaluateFitnessValue(conditions);
-                        //fitnessMap.put(path.getPathID(), fitnessValue);
+                        float fitnessValue = evaluateFitnessValue(conditions);
                     });
                 });
     }

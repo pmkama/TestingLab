@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f55aaba9-64a3-40d1-8392-4ae80cea1dab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/CoverageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/CoverageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/Condition.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/Condition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="162">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="54">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
@@ -65,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/triangle/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="852">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -114,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="60">
+              <caret line="32" column="84" lean-forward="true" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,7 +129,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="567">
@@ -194,10 +188,10 @@
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java" />
         <option value="$PROJECT_DIR$/src/tp6305/CoverageTest.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Node.java" />
-        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Condition.java" />
-        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" />
         <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java" />
+        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java" />
+        <option value="$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java" />
       </list>
     </option>
   </component>
@@ -369,7 +363,7 @@
       <workItem from="1551717573292" duration="23000" />
       <workItem from="1551717938660" duration="69000" />
       <workItem from="1551718531011" duration="18435000" />
-      <workItem from="1552414173375" duration="25585000" />
+      <workItem from="1552414173375" duration="27485000" />
     </task>
     <task id="LOCAL-00001" summary="code completed in the RandomCoverageTest class">
       <created>1548398140104</created>
@@ -427,11 +421,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552444542245</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="defining the fitness function [better output]">
+      <created>1552447191795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552447191795</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103063000" />
+    <option name="totallyTimeSpent" value="104963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,20 +444,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1294" height="688" extended-state="1" />
+    <frame x="-8" y="0" width="1294" height="688" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822065" weight="0.29335493" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822065" weight="0.29254457" />
       <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" weight="0.25506073" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.92266184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9460432" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3291815" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.418018" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.4172662" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49959514" weight="0.54092526" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50040483" side_tool="true" weight="0.6738739" />
@@ -542,7 +544,8 @@
     <MESSAGE value="project strcuture (in progress)" />
     <MESSAGE value="first version" />
     <MESSAGE value="defining the fitness function" />
-    <option name="LAST_COMMIT_MESSAGE" value="defining the fitness function" />
+    <MESSAGE value="defining the fitness function [better output]" />
+    <option name="LAST_COMMIT_MESSAGE" value="defining the fitness function [better output]" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -575,16 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -599,13 +592,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/triangle/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -634,10 +620,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4827#4828#0" expanded="true" />
+            <element signature="e#4907#4908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/CoverageTestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/triangle/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/SearchBasedTestCoverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="54">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
@@ -648,22 +663,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/FitnessFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="60">
+          <caret line="32" column="84" lean-forward="true" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tp6305/papemamakamara_aminatandiaye/tp2/ControlFlowGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4827#4828#0" expanded="true" />
-            <element signature="e#4907#4908#0" expanded="true" />
           </folding>
         </state>
       </provider>

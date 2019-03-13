@@ -28,11 +28,11 @@ public class FitnessFunction {
             return fitness;
         } else {
             count++;
+            System.out.println("Condition 1" + conditions + " Fitness 1: " + fitness);
             fitness = getFitness(readjustTestData(conditions, fitness));
-            System.out.println("Condition " + conditions + " Fitness : " + fitness + " -   Iteration : " + count);
+            System.out.println("Condition 2" + conditions + " Fitness 2: " + fitness);
         }
 
-        System.out.println("Final Iteration : " + count);
 
         return fitness;
     }
