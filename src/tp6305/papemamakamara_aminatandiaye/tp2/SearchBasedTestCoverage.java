@@ -25,34 +25,28 @@ public class SearchBasedTestCoverage extends CoverageTest {
             Node[] nodes = new Node [path.getNodes().size()];
             nodes = path.getNodes().toArray(nodes); //Recupére les noeuds
 
-            for (int i = 0; i < nodes.length; i++) { //fitness pour les conditions de chque noeuds
+            for (int i = 0; i < nodes.length; i++) { //fitness pour les conditions de chaque noeuds
                 Node node = nodes[i];
                 conditions = node.getConditions();
-
-                if (evaluateFitnessValue(conditions) == 0) { // Si les testData passe la condition donnée -> fitness == 0
+                System.out.println("Conditions : {" + conditions + " }");
+                float fit = evaluateFitnessValue(conditions);
+                if ( fit == 0) { // Si les testData passent la condition donnée -> fitness == 0
+                    System.out.println("Fitness du noeud courant : #" +fit );
                     int count = 0;
+                    float fit2;
+                    System.out.println("Test des noeuds antérieurs ...");
                     for (int j = 0; j < i; j++) { //Test des noeud précedents j<i
-                        float fit;
-                        while (evaluateFitnessValue(nodes[j].getConditions()) != 0){
+                        fit2 = evaluateFitnessValue(nodes[j].getConditions());
+                        System.out.println("Fitness noeuds antérieurs #"+fit2);
+                        while (fit2 != 0){
                             continue;
                         }
                         fitnessValue = 0; //condition d'arret de runTest() dans CoveredTest
-                        System.out.println("backward test successfuly done!");
+                        System.out.println("Test des noeud antérieurs effectué.");
                     }
                 }
             }
-
         }
-
-
-        /*this.cfg.getPaths().stream()
-                .forEach(path -> {
-                System.out.println("Path #"+path.getPathID());
-                    path.getNodes().stream().forEach(node -> {
-                        List<Condition> conditions = node.getConditions();
-                       fitnessValue =  evaluateFitnessValue(conditions);
-                    });
-                });*/
     }
 
     private float evaluateFitnessValue(List<Condition> conditions) {

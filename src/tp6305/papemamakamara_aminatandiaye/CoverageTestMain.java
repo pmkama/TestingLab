@@ -25,17 +25,10 @@ public class CoverageTestMain {
     private static void testBranchCoverage(CoverageTest coverageTest, double coverageThreshold) {
         int total = 0;
         for (int i = 0; i < 3; i++) {
-
             coverageTest.testBranchCoverage(coverageThreshold);
-
-            System.out.println("BranchCoverage is "
-                    + coverageTest.getBranchCoverage());
-            System.out.println("Number of iteration is "
-                    + coverageTest.getIterationNum());
-            total += coverageTest.getIterationNum();
         }
 
-        System.out.println("To reach " + coverageThreshold * 100 + "% branch coverage, the average iteration number is " + total / 3);
+        //System.out.println("To reach " + coverageThreshold * 100 + "% branch coverage, the average iteration number is " + total / 3);
     }
 
 }
